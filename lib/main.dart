@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
+import 'mainvideo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,14 +17,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(title: 'Flutter Upload File'),
+      home: const VideoPlayerApp(),
     );
   }
 }
 
 class Home extends StatefulWidget {
-  const Home({super.key, required this.title});
-  final String title;
+  const Home({super.key});
+
   @override
   State<Home> createState() => _HomeState();
 }
